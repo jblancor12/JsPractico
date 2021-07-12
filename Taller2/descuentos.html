@@ -12,18 +12,25 @@
         <p>Taller 2</p>
     </header>
 
-    <main>
+   
         <h2>Calcula el precio pagar  de tus productos con descuento</h2>
 
         <form>
             <label for="input-price">Inserta el precio del producto </label>
-            <input id="input-price">
+            <input id="input-price" type="number">
             <label for="input-discount">Inserta el porcentaje de descuento </label>
-            <input id="input-discount">
-            <button type="button">calcular</button>
+            <input id="input-discount" type="number">
+
+            <label for="input-coupon">Inserta el nombre del cupon </label>
+            <input id="input-coupon" type="text">
+
+            <button type="button" onclick="buttonCalculateDiscount()">calcular</button>
+            <p id="finalPriceP"></p>
         </form>
+
+        
     
-    </main>
+   
 
     <script src="./descuentos.js"></script>
 </body>
