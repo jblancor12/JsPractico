@@ -156,3 +156,9 @@ function hIsosceles(l1,l2,b)
         return "no es isosceles"
     }
 }
+
+
+
+
+
+    
