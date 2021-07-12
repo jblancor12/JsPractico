@@ -142,3 +142,17 @@ function calcularAreaCirculo()
     alert("la circunferencia es de "+area)
 
 }
+
+
+
+//funcion para triangulo isosceles
+
+function hIsosceles(l1,l2,b)
+{
+    if(l1===l2){
+        return Math.sqrt((l1*l1)-((b*b)/4));
+    }
+    else{
+        return "no es isosceles"
+    }
+}
