@@ -4,86 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Figuras</title>
 </head>
 <body>
     <header> 
         <h1>Figuras Geometricas</h1>
-        <p> Taller #1</p>
+        <p> Calculo de perimetros y areas</p>
 
     </header>
     <!-- Cuadrados-->
-    <section>
-        <h2>Calcula el area y perimetro de un cuadrado</h2>
+    <main>
+    <section class = "cuadrados">
+        <h2>Cuadrado</h2>
         <form>
-            <label for ="input-cuadrado">
-                escribe cuanto miden los lados del cuadrado: 
-            </label>
+            <figure>
+                <img src="https://lh3.googleusercontent.com/proxy/It9y0WhQFWX1_FhLseRlq-RWQi2J285l3sDOQKsWYOwzcmydHtU9-QEVvRoabp4wGiDUGf7nv_W64EIHgd1fK5_tzWQIVFUoqudQOXMtulpB14MdFrpgW-bpFZOmb5Ek7d0">
+            </figure>
+            <div>
+                <label for ="input-cuadrado">
+                    Cuanto miden los lados del cuadrado: 
+                </label>
 
-            <input id="input-cuadrado" type="number">
+                <input id="input-cuadrado" type="number">
+            </div>
 
             <button type="button" onclick="calcularPerimetroCuadrado()">
-                calcular perimetro
+                Calcular perimetro
             </button>
 
             <button type="button" onclick="calcularAreaCuadrado()">
-                calcular area
+                Calcular area
             </button>
+
+            <p id="res-cuadrados"> </p>
         </form>
     </section>
     <!-- Triaangulos-->
-    <section>
-        <h2>Calculo de area y perimetro de un triangulo</h2>
+    <section class="triangulos" >
+        <h2>Triangulo</h2>
+
+        <figure>
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/018b815b-c16f-4ea0-b33a-6e205bcd3f6b/d5viijg-60acad09-a6d0-4d47-b394-cf2e84678b78.png/v1/fill/w_250,h_250,strp/base_de_triangulo_png_by_khonny_d5viijg-250t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODk0IiwicGF0aCI6IlwvZlwvMDE4YjgxNWItYzE2Zi00ZWEwLWIzM2EtNmUyMDViY2QzZjZiXC9kNXZpaWpnLTYwYWNhZDA5LWE2ZDAtNGQ0Ny1iMzk0LWNmMmU4NDY3OGI3OC5wbmciLCJ3aWR0aCI6Ijw9ODk0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.PvvCg2SxWc96V-HcBZf48nvAeZiqeFpW_yAr1Ag2nsw">
+        </figure>
         <form>
-            <label for = "input-triangulo-l1">
-                escribe cuanto mide el primer lado del triangulo
-            </label>
-            <input id="input-triangulo-l1" type="number">
+            <div>
+                <label for = "input-triangulo-l1">
+                    Cuanto mide el primer lado del triangulo
+                </label>
+                <input id="input-triangulo-l1" type="number">
+            </div>
 
-            <label for = "input-triangulo-l2">
-                escribe cuanto mide el segundo lado del triangulo
-            </label>
-            <input id="input-triangulo-l2" type="number">
+            <div>
+                <label for = "input-triangulo-l2">
+                    Cuanto mide el segundo lado del triangulo
+                </label>
+                <input id="input-triangulo-l2" type="number">
+            </div>
 
-            <label for = "input-triangulo-b">
-                escribe cuanto mide la base del triangulo
-            </label>
-            <input id="input-triangulo-b" type="number">
+            <div>
+                <label for = "input-triangulo-b">
+                    Cuanto mide la base del triangulo
+                </label>
+                <input id="input-triangulo-b" type="number">
+            </div>
 
-            <label for = "input-triangulo-h">
-                escribe cuanto mide la altura del triangulo
-            </label>
-            <input id="input-triangulo-h" type="number">
-
+            <div>
+                <label for = "input-triangulo-h">
+                   Cuanto mide la altura del triangulo
+                </label>
+                <input id="input-triangulo-h" type="number">
+            </div>
 
             <button type="button" onclick="calcularPerimetroTriangulo()">
-                calcular perimetro
+                Calcular perimetro
             </button>
 
             <button type="button" onclick="calcularAreaTriangulo()">
-                calcular area
+                Calcular area
             </button>
+
+            <p id="res-triangulos"> </p>
 
         </form>
     </section>
-    <!-- Triaangulos-->
-    <section>
-        <h2>Calculo de perimetro y area del circulo</h2>
-        <form>
-            <label for="input-circulo"> escribe cuanto mide el radio  del circulo</label>
-            <input id="input-circulo" type="number">
+    <!-- Circulos-->
+    <section class = "circulos">
+        <h2>Circulo</h2>
 
+        <figure>
+            <img src="https://pngimage.net/wp-content/uploads/2018/05/circulo-sin-fondo-png-2.png">
+        <form>
+            <div>
+                <label for="input-circulo"> Cuanto mide el radio  del circulo</label>
+                <input id="input-circulo" type="number">
+            </div>
+
+            <div>
             <button type="button" onclick="calcularPerimetroCirculo()">
-                calcular perimetro
+                Calcular perimetro
             </button>
 
             <button type="button" onclick="calcularAreaCirculo()">
-                calcular area
+                Calcular area
             </button>
+            
+            <p id="res-circulos"> </p>
         </form>
-
+        
     </section>
-
+    </main>
 
     <script src="./figuras.js"></script>
 </body>
